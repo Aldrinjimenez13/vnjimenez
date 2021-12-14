@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meals - 4V'S</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Fuzzy+Bubbles:wght@400;700&family=Roboto+Slab:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="INDEX.html"><img src="./images/reallogo1.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="Meals.html">Meals</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+            <a href="cart.html"><img src="./images/pudicon.png" width="30px" height="30px"></a>
+            
+        </div>
+        
+    </div>
+<!--Food Details-->
+    
+    <div class="small-container food-details">
+        <div class="row">
+            <div class="c2">
+                <img src="./images/adobo.png" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./images/porkadobo.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/adobo.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/adobosteak.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/adobosagat.png" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="c2">
+                <p>Home / Meals</p>
+                <h1>Adobo by 4V's Restaurant</h1>
+                <h6>Php200.00</h6>
+                <select>
+                    <option>Select Size</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Extra-Large</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Food Details</h3>
+                <p>Adobo or adobar is the immersion of raw food in a stock composed variously of paprika, oregano, salt, garlic, and vinegar to preserve and enhance its flavor.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--title-->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Meals</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    
+    
+    <div class="small-container">
+        <div class="row">
+            <div class="c4">
+                <img src="./images/pancit.png">
+                <h4>Bihon Guisado</h4>
+                <p>Php110.00</p>
+            </div>
+            <div class="c4">
+                <img src="./images/sinigang.png">
+                <h4>Sinigang</h4>
+                <p>Php170.00</p>
+            </div>
+            <div class="c4">
+                <img src="./images/calamares.png">
+                <h4>Calamares</h4>
+                <p>Php80.00</p>
+            </div>
+            <div class="c4">
+                <img src="./images/Soba.jfif">
+                <h4>Soba</h4>
+                <p>Php210.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-c1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App For Android And IOS.</p>
+                    <div class="App-logo">
+                        <img src="./images/applogo.png">
+                        <img src="./images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-c2">
+                    <img src="./images/reallogo1.png">
+                    <p>Our Goal Is To Give Customers The Happiness <br>And Satisfaction.</p>
+                </div>
+                <div class="footer-c3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-c4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Gmail</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - 4V'S Restaurant</p>
+        </div>
+    </div>
+    
+<!--for meal galler-->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+            
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+</body>
+</html>
